@@ -1,15 +1,14 @@
-import { View, Text } from "react-native";
+import React from 'react'
+import { StatusBar, StyleSheet, Text, View } from 'react-native'
+import HomeScreen from './screens/HomeScreen'
+import SignedInStack from './screens/navigation'
+import NewPostScreen from './screens/NewPostScreen'
 
 export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Universal React with Expo</Text>
-    </View>
-  );
+    <>
+      <StatusBar backgroundColor={'#000'} animated />
+      <SignedInStack />
+    </>
+  )
 }
